@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activate Account | IITH Fees Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{brand:{600:'#0d9488',700:'#0f766e',800:'#115e59',900:'#134e4a'}},fontFamily:{sans:['Inter','system-ui','sans-serif'],display:['Playfair Display','Georgia','serif']}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col">
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-lg mx-auto px-4 py-4 flex items-center gap-3">
+      <a href="../index.html" class="w-10 h-10 rounded-full bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center text-white font-bold text-sm">IITH</a>
+      <div>
+        <div class="font-display font-bold text-brand-800">Fees Portal</div>
+        <div class="text-xs text-slate-500">Newly Admitted Student</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 flex items-center justify-center px-4 py-12">
+    <div class="w-full max-w-md card p-8">
+      <h1 class="font-display text-2xl font-bold text-brand-900 mb-1">Activate your account</h1>
+      <p class="text-sm text-slate-500 mb-6">For newly admitted students. Enter the details used during application.</p>
+
+      <div id="activate-error" class="hidden mb-4 p-3 rounded-lg bg-red-50 text-red-700 text-sm border border-red-100"></div>
+      <div id="activate-success" class="hidden mb-4 p-3 rounded-lg bg-emerald-50 text-emerald-800 text-sm border border-emerald-100"></div>
+
+      <form id="activate-form" class="space-y-4">
+        <div>
+          <label for="act-name" class="block text-sm font-medium mb-1">Full Name</label>
+          <input id="act-name" type="text" required class="input-field" placeholder="As on admission letter" />
+        </div>
+        <div>
+          <label for="act-email" class="block text-sm font-medium mb-1">Email Address</label>
+          <input id="act-email" type="email" required class="input-field" placeholder="you@example.com" />
+        </div>
+        <div>
+          <label for="act-jamb" class="block text-sm font-medium mb-1">JAMB Reg. No. / Application No.</label>
+          <input id="act-jamb" type="text" required class="input-field" placeholder="e.g. 2026XXXXXX" />
+        </div>
+        <button type="submit" class="btn-primary w-full">Activate Account</button>
+      </form>
+
+      <p class="mt-6 text-sm text-slate-500">
+        Already activated? <a href="login.html" class="text-brand-700 font-medium hover:underline">Sign in</a>
+      </p>
+    </div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

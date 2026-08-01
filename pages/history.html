@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment History | IITH Fees Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{brand:{600:'#0d9488',700:'#0f766e',800:'#115e59',900:'#134e4a'}},fontFamily:{sans:['Inter','system-ui','sans-serif'],display:['Playfair Display','Georgia','serif']}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="dashboard.html" class="text-sm text-slate-500 hover:text-brand-700">← Dashboard</a>
+      <span class="font-display font-bold text-brand-800">History</span>
+      <span class="w-16"></span>
+    </div>
+  </header>
+  <main class="max-w-2xl mx-auto px-4 py-8">
+    <h1 class="font-display text-2xl font-bold text-brand-900 mb-6">Payment history</h1>
+    <div id="history-list" class="space-y-3"></div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Receipt | IITH Fees Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{brand:{600:'#0d9488',700:'#0f766e',800:'#115e59',900:'#134e4a'}},fontFamily:{sans:['Inter','system-ui','sans-serif'],display:['Playfair Display','Georgia','serif']}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <header class="bg-white border-b border-slate-200 no-print">
+    <div class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="dashboard.html" class="text-sm text-slate-500 hover:text-brand-700">← Dashboard</a>
+      <span class="font-display font-bold text-brand-800">Receipt</span>
+      <button onclick="window.print()" class="text-sm text-brand-700 font-medium">Print</button>
+    </div>
+  </header>
+
+  <main class="max-w-2xl mx-auto px-4 py-8">
+    <div class="card p-6 sm:p-8 border-2 border-brand-100">
+      <div class="text-center mb-6">
+        <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 mb-3">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <h1 class="font-display text-xl font-bold text-brand-900">Payment Successful</h1>
+        <p class="text-sm text-slate-500">Official receipt — keep for your records</p>
+      </div>
+
+      <div class="text-center mb-6">
+        <div class="text-xs text-slate-500">Reference</div>
+        <div class="font-mono font-semibold text-lg" id="rcpt-ref">—</div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-3 text-sm mb-6">
+        <div><span class="text-slate-500">Student</span><div class="font-medium" id="rcpt-name">—</div></div>
+        <div><span class="text-slate-500">Matric No.</span><div class="font-medium" id="rcpt-matric">—</div></div>
+        <div class="sm:col-span-2"><span class="text-slate-500">Programme</span><div class="font-medium" id="rcpt-programme">—</div></div>
+      </div>
+
+      <div class="bg-slate-50 rounded-xl p-4 space-y-2 text-sm">
+        <div class="flex justify-between"><span id="rcpt-label">Fee</span><span id="rcpt-amount">—</span></div>
+        <div class="flex justify-between text-slate-500"><span>System charge</span><span id="rcpt-charge">—</span></div>
+        <div class="flex justify-between font-bold text-base border-t border-slate-200 pt-2"><span>Total paid</span><span class="text-brand-700" id="rcpt-total">—</span></div>
+      </div>
+
+      <div class="mt-4 text-xs text-slate-500 space-y-1">
+        <div>Paid: <span id="rcpt-date">—</span></div>
+        <div>Method: <span id="rcpt-method">—</span></div>
+        <div>Status: <span class="badge badge-success">PAID</span></div>
+      </div>
+
+      <p class="mt-6 text-xs text-center text-slate-400">International Institute of Tourism and Hospitality, Yenagoa · This receipt is valid for clearance and registration.</p>
+    </div>
+
+    <div class="mt-4 no-print flex gap-3 justify-center">
+      <a href="dashboard.html" class="text-sm text-brand-700 font-medium hover:underline">Back to dashboard</a>
+      <a href="history.html" class="text-sm text-slate-500 hover:underline">Payment history</a>
+    </div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

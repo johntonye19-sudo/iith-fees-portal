@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fee Schedule | IITH Fees Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{brand:{600:'#0d9488',700:'#0f766e',800:'#115e59',900:'#134e4a'}},fontFamily:{sans:['Inter','system-ui','sans-serif'],display:['Playfair Display','Georgia','serif']}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="text-sm text-slate-500 hover:text-brand-700">← Home</a>
+      <span class="font-display font-bold text-brand-800">Fee Schedule</span>
+      <a href="login.html" class="text-sm text-brand-700 font-medium">Login</a>
+    </div>
+  </header>
+  <main class="max-w-3xl mx-auto px-4 py-8">
+    <h1 class="font-display text-2xl font-bold text-brand-900 mb-2">Current fee schedule</h1>
+    <p class="text-sm text-slate-500 mb-6">Indicative charges for planning. Official amounts are confirmed on your invoice. Form fees match published IITH admissions notice.</p>
+
+    <div class="card overflow-hidden mb-6">
+      <div class="bg-brand-800 text-white px-4 py-3 font-semibold text-sm">Admission / Forms</div>
+      <table class="w-full text-sm">
+        <tbody>
+          <tr class="border-b border-slate-100"><td class="px-4 py-3">ND Admission Form</td><td class="px-4 py-3 text-right font-medium">₦5,000</td></tr>
+          <tr class="border-b border-slate-100"><td class="px-4 py-3">HND Admission Form</td><td class="px-4 py-3 text-right font-medium">₦7,000</td></tr>
+          <tr><td class="px-4 py-3">Acceptance Fee (demo)</td><td class="px-4 py-3 text-right font-medium">₦25,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card overflow-hidden mb-6">
+      <div class="bg-brand-800 text-white px-4 py-3 font-semibold text-sm">School Fees (demo — moderate, update with official schedule)</div>
+      <table class="w-full text-sm">
+        <tbody>
+          <tr class="border-b border-slate-100"><td class="px-4 py-3">National Diploma (ND) — per session</td><td class="px-4 py-3 text-right font-medium">₦85,000</td></tr>
+          <tr class="border-b border-slate-100"><td class="px-4 py-3">Higher National Diploma (HND) — per session</td><td class="px-4 py-3 text-right font-medium">₦95,000</td></tr>
+          <tr><td class="px-4 py-3">CVES Certificate Programme</td><td class="px-4 py-3 text-right font-medium">₦45,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card overflow-hidden mb-6">
+      <div class="bg-brand-800 text-white px-4 py-3 font-semibold text-sm">Other levies (demo)</div>
+      <table class="w-full text-sm">
+        <tbody>
+          <tr class="border-b border-slate-100"><td class="px-4 py-3">ICT Levy</td><td class="px-4 py-3 text-right font-medium">₦10,000</td></tr>
+          <tr class="border-b border-slate-100"><td class="px-4 py-3">Medical Levy</td><td class="px-4 py-3 text-right font-medium">₦8,000</td></tr>
+          <tr><td class="px-4 py-3">ID Card</td><td class="px-4 py-3 text-right font-medium">₦3,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-xs text-slate-500">School fees and levies above are <strong>illustrative demo values</strong> for portal testing. Replace with the official IITH bursary schedule before production go-live. Form fees (₦5,000 ND / ₦7,000 HND) are taken from published 2026/2027 admissions information.</p>
+  </main>
+</body>
+</html>
