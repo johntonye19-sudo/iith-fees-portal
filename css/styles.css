@@ -1,1 +1,65 @@
+/* IITH Fees Portal — production styles (CDN-compatible) */
+:root {
+  --brand: #0d9488;
+  --brand-dark: #0f766e;
+  --gold: #f59e0b;
+}
 
+body { font-family: Inter, system-ui, sans-serif; }
+.font-display { font-family: "Playfair Display", Georgia, serif; }
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  transition: background 0.15s;
+}
+.btn-primary:hover { background: var(--brand-dark); }
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.input-field {
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.input-field:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+  outline: none;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.badge-success { background: #d1fae5; color: #065f46; }
+.badge-warning { background: #fef3c7; color: #92400e; }
+.badge-danger { background: #fee2e2; color: #991b1b; }
+.badge-info { background: #e0f2fe; color: #075985; }
+
+@media print {
+  header, footer, .no-print { display: none !important; }
+  body { background: white; }
+  .print-only { display: block !important; }
+}
