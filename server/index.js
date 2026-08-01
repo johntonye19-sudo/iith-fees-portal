@@ -18,6 +18,31 @@ const crypto = require('crypto');
 const path = require('path');
 const rateLimit = require('express-rate-limit');
 const fs = require('fs');
+const events = require('events');
+
+// Short-term mitigation for environments that legitimately create many TLS sockets
+// (e.g., many outbound / inbound HTTPS calls during startup). This raises the
+// Node EventEmitter default limit to 50 to suppress the MaxListenersExceededWarning
+// while you investigate the root cause (listeners not removed or duplicated).
+// Note: prefer to fix the root cause rather than permanently increasing the limit.
+if (typeof events.EventEmitter.defaultMaxListeners === 'number') {
+  events.EventEmitter.defaultMaxListeners = Math.max(events.EventEmitter.defaultMaxListeners, 50);
+}
+
+// Log MaxListenersExceededWarning stack traces to help trace where listeners are added.
+process.on('warning', (warning) => {
+  try {
+    if (warning && warning.name === 'MaxListenersExceededWarning') {
+      console.warn('[warning]', warning.name, warning.message);
+      if (warning.stack) console.warn(warning.stack);
+    } else {
+      console.warn(warning);
+    }
+  } catch (e) {
+    // swallow logging errors so we don't crash on warning handling
+    console.warn('[warning] could not log warning:', e && e.message);
+  }
+});
 
 const app = express();
 const PORT = process.env.PORT || 3000;
