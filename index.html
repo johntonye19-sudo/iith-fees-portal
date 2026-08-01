@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IITH Fees Portal | International Institute of Tourism and Hospitality, Yenagoa</title>
+  <meta name="description" content="Official fees and levies payment portal of the International Institute of Tourism and Hospitality (IITH), Yenagoa. Pay school fees, acceptance fees, and form fees securely." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://fees.iithyenagoa.edu.ng/" />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50:'#f0fdfa', 100:'#ccfbf1', 200:'#99f6e4', 300:'#5eead4', 400:'#2dd4bf', 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 800:'#115e59', 900:'#134e4a' },
+            gold: { 400:'#fbbf24', 500:'#f59e0b', 600:'#d97706' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], display: ['Playfair Display', 'Georgia', 'serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <!-- Top bar -->
+  <div class="bg-brand-800 text-white text-xs sm:text-sm py-2">
+    <div class="max-w-6xl mx-auto px-4 flex flex-wrap justify-between gap-2">
+      <span>Official Fees &amp; Levies Payment Portal</span>
+      <span class="flex gap-4">
+        <a href="mailto:support@iithyenagoa.edu.ng" class="hover:underline">support@iithyenagoa.edu.ng</a>
+        <a href="tel:+2348144817529" class="hover:underline">+234 814 481 7529</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo-mark.svg" alt="IITH Yenagoa" class="w-11 h-11" width="44" height="44" />
+        <div>
+          <div class="font-display font-bold text-brand-800 leading-tight">IITH Fees Portal</div>
+          <div class="text-xs text-slate-500">Yenagoa · Bayelsa State</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="text-brand-700">Home</a>
+        <a href="pages/fees-schedule.html" class="text-slate-600 hover:text-brand-700">Fee Schedule</a>
+        <a href="pages/how-to-pay.html" class="text-slate-600 hover:text-brand-700">How to Pay</a>
+        <a href="pages/support.html" class="text-slate-600 hover:text-brand-700">Support</a>
+        <a href="pages/login.html" class="bg-brand-600 hover:bg-brand-700 text-white px-4 py-2 rounded-lg transition">Student Login</a>
+      </nav>
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg border border-slate-200" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white px-4 py-3 space-y-2">
+      <a href="index.html" class="block py-2 text-brand-700 font-medium">Home</a>
+      <a href="pages/fees-schedule.html" class="block py-2 text-slate-600">Fee Schedule</a>
+      <a href="pages/how-to-pay.html" class="block py-2 text-slate-600">How to Pay</a>
+      <a href="pages/support.html" class="block py-2 text-slate-600">Support</a>
+      <a href="pages/login.html" class="block py-2 bg-brand-600 text-white text-center rounded-lg">Student Login</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-brand-800 via-brand-700 to-brand-900 text-white">
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_20%,white,transparent_50%)]"></div>
+      <div class="max-w-6xl mx-auto px-4 py-16 sm:py-24 relative">
+        <div class="max-w-2xl">
+          <p class="text-brand-200 text-sm font-semibold tracking-wide uppercase mb-3">International Institute of Tourism and Hospitality</p>
+          <h1 class="font-display text-3xl sm:text-5xl font-bold leading-tight mb-4">Pay Your Fees Securely Online</h1>
+          <p class="text-brand-100 text-lg mb-8">Generate invoices, pay school fees, acceptance fees, and form fees, then print official receipts — all from one secure portal.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="pages/login.html" class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-slate-900 font-semibold px-6 py-3 rounded-xl shadow-lg transition">
+              Student Login
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <a href="pages/activate.html" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 px-6 py-3 rounded-xl transition">Newly Admitted Student</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick actions -->
+    <section class="max-w-6xl mx-auto px-4 -mt-8 relative z-10">
+      <div class="grid sm:grid-cols-3 gap-4">
+        <a href="pages/login.html" class="bg-white rounded-2xl shadow-lg border border-slate-100 p-6 hover:shadow-xl transition group">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-4 group-hover:bg-brand-600 group-hover:text-white transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <h2 class="font-semibold text-lg mb-1">Returning Students</h2>
+          <p class="text-sm text-slate-500">Sign in with matriculation number and password to pay fees and print receipts.</p>
+        </a>
+        <a href="pages/activate.html" class="bg-white rounded-2xl shadow-lg border border-slate-100 p-6 hover:shadow-xl transition group">
+          <div class="w-12 h-12 rounded-xl bg-gold-100 text-gold-600 flex items-center justify-center mb-4 group-hover:bg-gold-500 group-hover:text-white transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/></svg>
+          </div>
+          <h2 class="font-semibold text-lg mb-1">Newly Admitted</h2>
+          <p class="text-sm text-slate-500">Activate your account, pay acceptance / form fees, and complete registration steps.</p>
+        </a>
+        <a href="pages/fees-schedule.html" class="bg-white rounded-2xl shadow-lg border border-slate-100 p-6 hover:shadow-xl transition group">
+          <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center mb-4 group-hover:bg-slate-800 group-hover:text-white transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          </div>
+          <h2 class="font-semibold text-lg mb-1">Fee Schedule</h2>
+          <p class="text-sm text-slate-500">View current session charges for ND, HND, and CVES programmes.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- About institute strip -->
+    <section class="max-w-6xl mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold text-brand-900 mb-4">About IITH Yenagoa</h2>
+          <p class="text-slate-600 mb-4">The International Institute of Tourism and Hospitality (IITH), Yenagoa, Bayelsa State, was established in 2012 by the Bayelsa State Government. It is NBTE-accredited and offers National Diploma (ND) and Higher National Diploma (HND) programmes in Tourism, Hospitality, and allied disciplines.</p>
+          <p class="text-slate-600 mb-6">Rector: <strong>Professor Apuega R. Arikawei</strong></p>
+          <a href="https://iithyenagoa.edu.ng/" target="_blank" rel="noopener" class="text-brand-700 font-medium hover:underline">Visit main website →</a>
+        </div>
+        <div class="bg-brand-50 rounded-2xl p-6 border border-brand-100 space-y-3 text-sm">
+          <div class="flex justify-between"><span class="text-slate-500">Schools</span><span class="font-medium">SSMTT · SSET · CVES</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Programmes</span><span class="font-medium">ND · HND · Certificates</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Form (ND)</span><span class="font-medium">₦5,000</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Form (HND)</span><span class="font-medium">₦7,000</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Location</span><span class="font-medium">Opolo/AIT Road, Yenagoa</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Security note -->
+    <section class="bg-slate-100 border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="font-semibold text-lg mb-4 text-center">Security &amp; Trust</h2>
+        <div class="grid sm:grid-cols-4 gap-4 text-center text-sm">
+          <div class="bg-white rounded-xl p-4 border border-slate-200">
+            <div class="font-medium mb-1">Encrypted Sessions</div>
+            <p class="text-slate-500 text-xs">HTTPS recommended in production</p>
+          </div>
+          <div class="bg-white rounded-xl p-4 border border-slate-200">
+            <div class="font-medium mb-1">Official Portal Only</div>
+            <p class="text-slate-500 text-xs">Pay only through this institutional channel</p>
+          </div>
+          <div class="bg-white rounded-xl p-4 border border-slate-200">
+            <div class="font-medium mb-1">Receipt Verification</div>
+            <p class="text-slate-500 text-xs">Print and keep all payment receipts</p>
+          </div>
+          <div class="bg-white rounded-xl p-4 border border-slate-200">
+            <div class="font-medium mb-1">No Cash on Portal</div>
+            <p class="text-slate-500 text-xs">Card / transfer via approved channels</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-900 text-brand-100 py-10">
+    <div class="max-w-6xl mx-auto px-4 grid sm:grid-cols-3 gap-8 text-sm">
+      <div>
+        <div class="font-display font-bold text-white text-lg mb-2">IITH Fees Portal</div>
+        <p class="text-brand-200/80">International Institute of Tourism and Hospitality, Yenagoa, Bayelsa State, Nigeria.</p>
+      </div>
+      <div>
+        <div class="font-semibold text-white mb-2">Contact</div>
+        <p>info@iithyenagoa.edu.ng</p>
+        <p>admissions@iithyenagoa.edu.ng</p>
+        <p>support@iithyenagoa.edu.ng</p>
+        <p class="mt-1">+234 814 481 7529 · +234 803 864 5156</p>
+      </div>
+      <div>
+        <div class="font-semibold text-white mb-2">Links</div>
+        <a href="pages/bursary.html" class="block hover:text-white">Bursary Console</a>
+        <a href="pages/terms.html" class="block hover:text-white">Terms of Use</a>
+        <a href="pages/privacy.html" class="block hover:text-white">Privacy Policy</a>
+        <a href="https://iithyenagoa.edu.ng/" class="block hover:text-white" target="_blank" rel="noopener">Main Website</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-brand-800 text-xs text-brand-300/80 text-center">
+      © 2026 International Institute of Tourism and Hospitality, Yenagoa. All rights reserved. This is the official fees payment channel.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
