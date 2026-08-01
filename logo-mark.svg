@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="IITH">
+  <defs>
+    <linearGradient id="gm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#115e59"/>
+    </linearGradient>
+  </defs>
+  <circle cx="24" cy="24" r="22" fill="url(#gm)" stroke="#f59e0b" stroke-width="2"/>
+  <circle cx="24" cy="18" r="6" fill="#f59e0b"/>
+  <path d="M10 30 Q24 20 38 30 L38 33 Q24 25 10 33 Z" fill="#fff"/>
+  <text x="24" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="7" font-weight="700" fill="#fff">IITH</text>
+</svg>

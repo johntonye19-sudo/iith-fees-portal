@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="IITH Yenagoa logo">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#115e59"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="60" cy="60" r="56" fill="url(#g)" stroke="#f59e0b" stroke-width="4"/>
+  <!-- Inner white -->
+  <circle cx="60" cy="60" r="44" fill="#fff"/>
+  <!-- Stylized tourism/hospitality mark: sun + horizon -->
+  <circle cx="60" cy="48" r="14" fill="#f59e0b"/>
+  <path d="M28 72 Q60 52 92 72 L92 78 Q60 62 28 78 Z" fill="#0d9488"/>
+  <!-- Text mark IITH -->
+  <text x="60" y="98" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#134e4a">IITH</text>
+</svg>
