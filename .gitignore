@@ -1,0 +1,15 @@
+# Node and runtime
+node_modules/
+server/node_modules/
+server/data/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Env
+server/.env
+.env
